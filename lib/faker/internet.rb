@@ -33,7 +33,7 @@ module Faker
         %w(co.uk com us uk ca biz info name).rand
       end
       
-      def URL(protocol = nil)
+      def url(protocol = nil)
         protocol ||= ["http", "https", "ftp"].rand
         
         base = [ "#{protocol}://#{domain_name}"]
